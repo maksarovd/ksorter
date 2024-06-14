@@ -12,22 +12,22 @@ class KsorterServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->loadRoutesFrom(
-            __DIR__.'/../routes/web.php'
+            __DIR__.'/../../routes/web.php'
         );
         $this->loadMigrationsFrom(
-            __DIR__.'/../database/migrations'
+            __DIR__.'/../../database/migrations'
         );
         $this->loadTranslationsFrom(
-            __DIR__.'/../lang', 'ksorter'
+            __DIR__.'/../../lang', 'ksorter'
         );
         $this->loadViewsFrom(
-            __DIR__.'/../resources/views', 'ksorter'
+            __DIR__.'/../../resources/views', 'ksorter'
         );
 
         $this->publishes([
-            __DIR__.'/../config/ksorter.php' => config_path('ksorter.php'),
-            __DIR__.'/../resources/views' => resource_path('views/ksorter'),
-            __DIR__.'/../lang' => $this->app->langPath('lang'),
+            __DIR__.'/../../config/ksorter.php' => config_path('ksorter.php'),
+            __DIR__.'/../../resources/views' => resource_path('views/ksorter'),
+            __DIR__.'/../../lang' => $this->app->langPath('lang'),
         ]);
     }
 
