@@ -1,6 +1,6 @@
 {
     "name": "maksarovd/ksorter",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Ksorter",
     "type": "laravel-package",
     "autoload": {
@@ -14,5 +14,15 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Maksarovd\\Ksorter\\Providers\\KsorterServiceProvider"
+            ],
+            "aliases": {
+                "Ksorter": "Maksarovd\\Ksorter\\Facades\\Ksorter"
+            }
+        }
+    }
 }
