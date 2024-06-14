@@ -1,0 +1,17 @@
+{
+    "name": "maksarovd/ksorter",
+    "description": "Ksorter",
+    "type": "laravel-package",
+    "autoload": {
+        "psr-4": {
+            "Maksarovd\\Ksorter\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Maksarov Dmitriy"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
