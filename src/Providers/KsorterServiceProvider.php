@@ -27,7 +27,7 @@ class KsorterServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../../config/ksorter.php' => config_path('ksorter.php'),
             __DIR__.'/../../resources/views' => resource_path('views/ksorter'),
-            __DIR__.'/../../lang' => $this->app->langPath('lang'),
+            __DIR__.'/../../lang' => $this->app->langPath(''),
         ]);
     }
 
