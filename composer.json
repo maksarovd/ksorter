@@ -1,5 +1,6 @@
 {
     "name": "maksarovd/ksorter",
+    "version": "1.0.0",
     "description": "Ksorter",
     "type": "laravel-package",
     "autoload": {
